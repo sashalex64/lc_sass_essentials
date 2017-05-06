@@ -1,0 +1,23 @@
+{
+  "name": "lc_sass_essentials",
+  "version": "1.0.0",
+  "description": "Lc Sass Essentials Course",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sashalex64/lc_sass_essentials.git"
+  },
+  "keywords": [
+    "NPM",
+    "Gulp",
+    "Sass",
+    "Git"
+  ],
+  "author": "Sash Alex",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-connect": "^5.0.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.0"
+  }
+}
