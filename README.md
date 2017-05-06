@@ -1,5 +1,6 @@
 # Sass Essential Training
-I used gulp-sass and gulp-connect (as a server) instead of ruby sass and gulp-webserver. File structure is also slightly changed.
+
+I used gulp-sass and gulp-connect instead of ruby sass and gulp-webserver. File structure is also slightly changed.
 
 ## Instructions
 
