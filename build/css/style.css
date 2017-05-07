@@ -451,9 +451,39 @@ body {
   margin: 0 auto;
 }
 
+#typography .container p:nth-of-type(2) {
+  color: rgba(2, 41, 51, 0.5);
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: "Bree Serif", Helvetica, sans-serif;
   color: #D14348;
+}
+
+.btn-default, .btn-hot, .btn-cool {
+  display: inline-block;
+  padding: 6px 12px;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  border: 1px solid black;
+  border-radius: 4px;
+  font-family: "Bree Serif", Helvetica, sans-serif;
+  user-select: none;
+  color: #EEE8D6;
+}
+
+.btn-default {
+  background: #022933;
+}
+
+.btn-hot {
+  background: #D14348;
+}
+
+.btn-cool {
+  background: #0076A3;
 }
 
 .background {
@@ -484,8 +514,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .jumbotron {
-  background: #022933;
+  background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.6)), url("../images/water.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
   height: 600px;
+}
+
+.bridge {
+  background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.6)), url("../images/bridge.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 300px;
 }
 
 .media {
@@ -495,9 +536,27 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .media .item {
-  margin-bottom: 20px;
+  padding-bottom: 10px;
+  padding-left: 10px;
   border-top: 1px dotted #D14348;
   padding-top: 10px;
+}
+
+.media .item:hover {
+  background: #f5f2e8;
+}
+
+.media .item:last-of-type {
+  border-bottom: 1px dotted #D14348;
+}
+
+.media .item:before, .media .item:after {
+  content: '';
+  display: table;
+}
+
+.media .item:after {
+  clear: both;
 }
 
 .media .head {

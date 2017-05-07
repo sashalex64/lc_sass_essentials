@@ -1,13 +1,23 @@
-$color-item-border: $red;
+
 .media {
   margin: 0;
   padding: 0;
   list-style: none;
 
   .item {
-    margin-bottom: 20px;
+    padding-bottom: 10px;
+    // margin-bottom: 0px;
+    padding-left: 10px;
     border-top: 1px dotted $color-item-border;
     padding-top: 10px;
+
+    &:hover {
+      background: lighten($color-backgrounds, 5);
+    }
+    &:last-of-type {
+      border-bottom: 1px dotted $color-item-border;
+    }
+    @include clearfix;
   }
   .head {
     margin: 0;
