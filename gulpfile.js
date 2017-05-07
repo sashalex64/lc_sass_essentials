@@ -3,11 +3,13 @@ var gulp = require('gulp');
 var sass = require('gulp-sass');
 var sourcemaps = require('gulp-sourcemaps');
 var connect = require('gulp-connect');
+var wait = require('gulp-wait');
 
 
 
 
-var sassSource = ['sass/*.scss'];
+var sassSource = ['sass/**/*.scss'];
+// zanimljivo je da putanja funkcionise i ovako i 'sass/*.scss'
 var css = 'build/css';
 var jsSource = ['build/js/*.js'];
 var htmlSource = ['build/*.html'];
@@ -26,6 +28,7 @@ gulp.task('js', function (){
 })
 gulp.task('sassCompile', function () {
   return gulp.src(sassSource)
+    .pipe(wait(100))
     .pipe(sourcemaps.init())
     .pipe(sass({outputStyle: 'expanded'})
       .on('error', sass.logError))
