@@ -3,7 +3,7 @@
 I'm using gulp-sass and gulp-connect instead of ruby sass and gulp-webserver. File structure is also slightly changed.
 
 ## Note:
-Work in progress...
+Course finished.
 
 <!-- 
 1. Used:
