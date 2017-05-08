@@ -5,10 +5,10 @@ I'm using gulp-sass and gulp-connect instead of ruby sass and gulp-webserver. Fi
 ## Note:
 Course finished.
 
-<!-- 
-1. Used:
+
+### Used:
 	- [node.js](http://nodejs.org/)
 	- [git](http://git-scm.com/)
 	- [gulp](http://gulpjs.com/)
- -->
+
 
