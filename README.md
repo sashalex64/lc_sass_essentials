@@ -6,7 +6,7 @@ I'm using gulp-sass and gulp-connect instead of ruby sass and gulp-webserver. Fi
 Course finished.
 
 
-### Used:
+- Used:
 	- [node.js](http://nodejs.org/)
 	- [git](http://git-scm.com/)
 	- [gulp](http://gulpjs.com/)
