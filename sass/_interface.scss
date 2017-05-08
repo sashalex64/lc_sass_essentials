@@ -1,7 +1,8 @@
 $color-btn-text: $color-backgrounds;
-$color-btn-default: $color-main;
-$color-btn-hot: $red;
-$color-btn-cool: $blue;
+// $color-btn-default: $color-main;
+// $color-btn-hot: $red;
+// $color-btn-cool: $blue;
+$roundness: 20px 0 20px 0;
 
 %btn {
 	display: inline-block;
@@ -17,28 +18,64 @@ $color-btn-cool: $blue;
 	color: $color-btn-text;
 }
 
-.btn-default {
-	@extend %btn;
-	background: $color-btn-default;
+//===========LISTS
+
+// $color-btn-names: 'default', 'hot', 'cool';
+// $color-btn-values: $color-main, $red, $blue;
+
+// @each $name in $color-btn-names {
+// 	$i: index($color-btn-names, $name);
+// 	.btn-#{$name} {
+// 		@extend %btn;
+// 		background-color: nth($color-btn-values, $i);
+// 	}
+// }
+//=========end of LISTS
+
+//=============MAPS 
+
+$color-btn: (
+	default: $color-main,
+	hot: $red,
+	cool: $blue
+	);
+
+@each $name, $value in $color-btn {
+	.btn-#{$name} {
+		@extend %btn;
+		background-color: $value;
+	}
 }
-.btn-hot {
-	@extend %btn;
-	background: $color-btn-hot;
-}
-.btn-cool {
-	@extend %btn;
-	background: $color-btn-cool;
-}
+
+
+
+
+//=========end of MAPS
+
+// .btn-default {
+// 	@extend %btn;
+// 	background: $color-btn-default;
+// }
+// .btn-hot {
+// 	@extend %btn;
+// 	background: $color-btn-hot;
+// }
+// .btn-cool {
+// 	@extend %btn;
+// 	background: $color-btn-cool;
+// }
 
 .grid {
 	@include clearfix;
 	.item {
 		float: left;
-		@include imagegrid(3, 2%);
+		@include imagegrid(3, 1%);
 	}
 	img {
 		display: block;
-		border-radius: 10px;
+		//display nema uticaj
+		border-radius: nth($roundness, 1);
+		//max-with je kljucan
 		max-width:100%;
 	}
 }
